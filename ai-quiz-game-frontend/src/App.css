@@ -1,0 +1,213 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  color: white;
+  padding: 20px;
+}
+
+.welcome-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+.welcome-screen h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  min-width: 200px;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.player-setup {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+}
+
+.player-setup select,
+.player-setup input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.number-input {
+  width: 80px !important;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 8px !important;
+}
+
+/* Style the number input arrows */
+.number-input::-webkit-inner-spin-button,
+.number-input::-webkit-outer-spin-button {
+  opacity: 1;
+  height: 30px;
+  cursor: pointer;
+}
+
+/* For Firefox */
+.number-input {
+  -moz-appearance: textfield;
+}
+
+.number-input:hover::-webkit-inner-spin-button,
+.number-input:hover::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
+.question-display {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.question-display ul {
+  list-style: none;
+  padding: 0;
+}
+
+.question-display li {
+  padding: 1rem;
+  margin: 0.5rem 0;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.question-display li:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.question-display li.selected {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.leaderboard {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+}
+
+.leaderboard ul {
+  list-style: none;
+  padding: 0;
+}
+
+.leaderboard li {
+  padding: 1rem;
+  margin: 0.5rem 0;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.leaderboard li.current-player {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  transform: scale(1.02);
+}
+
+.leaderboard .rank {
+  font-weight: bold;
+  min-width: 30px;
+}
+
+.leaderboard .player-name {
+  flex-grow: 1;
+  text-align: left;
+  margin: 0 1rem;
+}
+
+.leaderboard .score {
+  font-weight: bold;
+  color: #ffd700;
+}
+
+.leaderboard-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.last-score {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+.last-score h3 {
+  margin: 0;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.settings {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+}
+
+.settings div {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.settings label {
+  margin-right: 1rem;
+}
+
+.settings select,
+.settings input[type="checkbox"] {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.9);
+}
